@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECTUN Media</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        header, footer {
+            background-color: #E8702E;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #d3d3d3;
+        }
+        .light-mode {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .btn-dark-mode {
+            background-color: #E8702E;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn-dark-mode:hover {
+            background-color: #cc5f23;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <header>
+        <h1>TECTUN Media</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to TECTUN Media – your hub for tech-driven design, branding, and printing solutions. We bring futuristic creativity and unmatched class to every project.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Explore our expertise in branding, digital printing, and custom design solutions tailored to your needs.</p>
+        </section>
+        <section id="portfolio">
+            <h2>Our Portfolio</h2>
+            <p>Discover our work and see how we bring ideas to life with cutting-edge design and printing techniques.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for your next project. Email: info@tectunmedia.com | Phone: +44 123 456 7890</p>
+        </section>
+        <section>
+            <button class="btn-dark-mode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 TECTUN Media. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            if (body.classList.contains('light-mode')) {
+                body.classList.replace('light-mode', 'dark-mode');
+            } else {
+                body.classList.replace('dark-mode', 'light-mode');
+            }
+        }
+    </script>
+</body>
+</html>
